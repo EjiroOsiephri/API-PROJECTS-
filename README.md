@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/EjiroOsiephri)
-- Live Site URL: [Add live site URL here](https://chic-malasada-f43b5d.netlify.app/)
+- Solution URL: [(https://github.com/EjiroOsiephri)]
+- Live Site URL: [(https://chic-malasada-f43b5d.netlify.app/)]
 
 ## My process
 
