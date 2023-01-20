@@ -79,14 +79,13 @@ const proudOfThisFunc = () => {
 
 ### Useful resources
 
-- [Example resource 1](https://freecodecamp.org) - This helped me for Development reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://getBootStrap.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [(https://freecodecamp.org)] - This helped me for Development reason. I really liked this pattern and will use it going forward.
+- [(https://getBootStrap.com)]- This is an amazing article which helped me finally understand BOOTSTRAP. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Shinigami-012)
-- Twitter - [@yourusername](https://www.twitter.com/TheFivePsycho)
+- Frontend Mentor - [(https://www.frontendmentor.io/profile/Shinigami-012)]
+- Twitter - [(https://www.twitter.com/TheFivePsycho)]
 
