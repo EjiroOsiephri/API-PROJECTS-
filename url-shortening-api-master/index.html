@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/ebbf28ada9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="#" class="navbar-brand" id="shortly">Shortly</a>
+          
+        <div class="nav-mobile">
+
+          <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+        </div>
+          
+          <!-- <button
+            class="nav-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          > -->
+          <!-- <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <i class="fa-sharp fa-solid fa-bars" id="bars"></i>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#learn" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#questions" class="nav-link"> Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link"> Resources</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <button class="btn-hover">Login</button>
+              <button class="btn-hover1">Sign Up</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+      <section class="text-light p-5 text-center text-sm-start">
+        <div class="container">
+           <div class="d-sm-flex">
+            <div class="h1">
+            <h1 class="animate__animated animate__fadeInDown"> More than just <br> shorter links</h1>
+            <p class="lead my-4 me-3"> Build your brand’s recognition and get detailed
+              insights <br> on how your links are performing</p>
+             <button type="button" class="btn" id="btn-3">Get Started</button>
+             <!-- <button type="button" class="btn btn-primary">Button</button> -->
+            </div>
+           <img src="images/illustration-working.svg" id="img-working" class="img-fluid w-50 d-none d-sm-block" alt="">
+           </div>
+        </div>
+        <section id="image-bg" class="bg-primary text-white p-5">
+          <div class="container">
+              <div class="d-md-flex justify-content-between align-items-center">
+                 <div class="input-group new-input">
+                  <input type="text" id="inputSearch" class="form-control" placeholder=" Shorten a link here... ">
+                  
+                </div>
+                <p class="par">Please add a Link</p>
+                <button class="btn" id="btn-dark" type="button">Shorten it!</button>
+              </div>
+          </div>
+       </section>
+
+       <div class="divContainer">
+       
+        
+       </div>
+
+       <div class="containers">
+       <h1>Advanced Statistics</h1>
+       <h4>Track how your links are performing
+        across the web with <br> our advanced statistics dashboard.</h4>
+       </div>
+       <section class="p-5 animate__animated animate__flipInX">
+        <div class="container">
+            <div class="row g-4 d-flex text-center">
+                 <div class="col-md">
+                  <div class="card bg-light shdow-lg">
+                      <div class="card-body">
+                          <div class="h1">
+                              <img src="images/icon-fully-customizable.svg"  alt="">
+                          </div>
+                          <h3 class="card-title mb-3" id="card-title">Fully Customizable</h3>
+                          <p class="card-text" id="card-text">
+                            Improve brand awareness and content discoverability through
+                            customizable links, supercharging audience engagement.
+                          </p>
+                          
+                      </div>
+                  </div>
+              </div>
+                <div class="col-md" id="col-2">
+                  <div class="card bg-light shdow-lg">
+                      <div class="card-body">
+                          <div class="h1">
+                              <img src="images/icon-brand-recognition.svg"  alt="">
+                          </div>
+                          <h3 class="card-title mb-3" id="card-title">Brand Recognition</h3>
+                          <p class="card-text" id="card-text">
+                             Boost your brand recognition with each click. Generic links doesn't mean a thing.
+                             branded links helps instil confidence in your content.
+                          </p>
+                          <p class="line"></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md" id="col-3">
+                <div class="card bg-light shdow-lg">
+                    <div class="card-body">
+                        <div class="h1">
+                            <img src="images/icon-detailed-records.svg"  alt="">
+                        </div>
+                        <h3 class="card-title mb-3" id="card-title">Detailed Records</h3>
+                        <p class="card-text" id="card-text">
+                          Gain insights into who is clicking your links. Knowing when and
+                          where people engage with your content helps inform better decisions.
+                        </p>
+                        <p class="lines"></p>
+                    </div>
+                </div>
+            </div>
+              
+     </section>
+
+
+
+     <section id="img-background-two" class="bg-primary text-white p-5">
+      <div class="divs">
+        <h1>Boost your links today.</h1>
+        <button class="btn  btn-lg" id="btn-dark" type="button">Button</button>
+      </div>
+   </section>
+
+
+   
+    
+        <div class="d-md-flex justify-content-between mt-5 align-items-center" id="bg-black">
+           <h3 class="mb-3 ps-3 mb-md-0">
+            Shortly
+           </h3>
+           <div class="flex">
+            <h5>Features</h5>
+            <h5>Resources</h5>
+            <h5>Company</h5>
+            
+            <div class="flex-two">
+              <img src="images/icon-facebook.svg" alt="">
+              <img src="images/icon-instagram.svg" alt="">
+              <img src="images/icon-pinterest.svg" alt="">
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+           </div>
+
+           <ul class="list-one">
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+           </ul>
+
+           <ul class="list-two">
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+           </ul>
+
+           <ul class="list-three">
+            <li>About</li>
+            <li>Our team</li>
+            <li>Carears</li>
+            <li>Contacts</li>
+           </ul>
+          
+        </div>
+    
+ 
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

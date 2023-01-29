@@ -1,0 +1,19 @@
+Shorten It! Brand Recognition
+   Fully
+Customizable  Boost your links
+today Get Started Features Link Shortening Branded Links Analytics Resources
+Blog Developers Support Company About Our Team Careers Contact
+
+// const linkDiv = document.createElement("div");
+// const linkOne = document.createElement("h3");
+// const linkTwo = document.createElement("a");
+
+    // linkOne.innerHTML = `${data.result.original_link}`;
+
+    // linkTwo.innerHTML = `${data.result.full_short_link}`;
+    // linkTwo.href = `${data.result.full_short_link}`;
+
+    // localStorage.setItem("link", JSON.stringify(data));
+
+    // linkDiv.append(linkOne, linkTwo);
+    // divContainer.appendChild(linkDiv);
