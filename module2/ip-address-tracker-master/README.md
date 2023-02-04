@@ -69,7 +69,7 @@ As mentioned above, there are many ways to host your project for free. Our recom
 
 - [GitHub Pages](https://pages.github.com/)
 - [Vercel](https://vercel.com/)
-- [https://profound-kulfi-4ac3a6.netlify.app/](https://www.netlify.com/)
+- [https://lighthearted-douhua-f684ed.netlify.app/](https://www.netlify.com/)
 
 You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
