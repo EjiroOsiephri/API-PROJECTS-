@@ -34,6 +34,12 @@ observer.observe(sectionTwo);
 //   observer.observe(section);
 // });
 
+bars.addEventListener("click", () => {
+  navbar.classList.add("animate__animated", "animate__fadeInDownBig");
+  times.style.visibility = "visible";
+  bars.style.visibility = "hidden";
+});
+
 //adding intersection observer API
 
 // const options = {};
