@@ -8,6 +8,55 @@ const par = document.querySelector(".par");
 const navMobile = document.querySelector(".nav-mobile");
 const bars = document.getElementById("bars");
 
+const sectionOne = document.getElementById("sectionOne");
+const sectionTwo = document.getElementById("sectionTwo");
+const faders = document.querySelector(".animate__animated animate__flip");
+
+const sections = document.querySelectorAll("section");
+
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-150px",
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.toggle("inverse");
+  });
+}, options);
+
+observer.observe(sectionTwo);
+// sections.forEach((section) => {
+//   observer.observe(section);
+// });
+
+//adding intersection observer API
+
+// const options = {};
+
+// const appearOnScroll = new IntersectionObserver(function (
+//   entries,
+//   appearOnScroll
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       return;
+//     } else {
+//       entry.target.classList.add("inverse");
+//       appearOnScroll.unobserve(entry);
+//     }
+//   });
+// },
+// options);
+
+// observer.observe(sectionTwo);
+
+
+
 const storage = JSON.parse(localStorage.getItem("name"));
 btn.addEventListener("click", () => {
   if (!localStorage) {
