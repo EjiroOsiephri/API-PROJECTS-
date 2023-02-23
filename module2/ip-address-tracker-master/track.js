@@ -74,7 +74,16 @@ navigator.geolocation.watchPosition(getIP);
          document.getElementById('latitude').textContent = location.lat;
          document.getElementById('longitude').textContent = location.lng;
 
-    
+    const newLatLng = L.latLng(location.lat, location.lng);
+
+  if (!marker) {
+    marker = L.marker(newLatLng).addTo(map);
+  } else {
+    marker.setLatLng(newLatLng);
+  }
+
+  map.setView(newLatLng);
+
          
 
          const lat = pos.coords.latitude
